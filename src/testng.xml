@@ -1,10 +1,17 @@
 <?xml version="1.0" encoding="UTF-8"?>
         <!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
 <suite name="TestNG_Listeners" parallel="false">
-<listeners>
-    <listener class-name="Listenerclass_layer.Listenertest" /> </listeners>
-<test name="Test">
-    <classes>
-        <class name="Pagelayer.ITestListener_example" /> </classes>
-</test>
+
+    <listeners>
+        <listener class-name="Listener_layer.IReporter_listener1" />
+        <listener class-name="Listener_layer.Listenertest" />
+    </listeners>
+
+    <test name="IReportlisteners">
+        <classes>
+            <class name="Pagelayer.IReporterListener_example" />
+            <class name="Pagelayer.ITestListener_example" />
+        </classes>
+    </test>
+
 </suite>

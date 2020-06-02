@@ -1,11 +1,8 @@
-package Listenerclass_layer;
+package Listener_layer;
 
-import org.testng.IAnnotationTransformer;
 import org.testng.ITestContext;
 import org.testng.ITestListener;
 import org.testng.ITestResult;
-import org.testng.annotations.Listeners;
-
 
 
 public class Listenertest  implements ITestListener {
@@ -45,7 +42,7 @@ public class Listenertest  implements ITestListener {
     @Override
     public void onStart(ITestContext context) {
 
-        System.out.println("start of execution"+context.getName());
+        System.out.println("start of execution "+context.getName());
         System.out.println("directory of project: "+context.getOutputDirectory());
 
     }
